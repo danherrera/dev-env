@@ -1,3 +1,14 @@
 #!/usr/bin/env bash
 
-echo "Hello from neovim"
+source ./utils.sh
+
+echo "Setting up Neovim"
+
+git clone -b v0.10.4 https://github.com/neovim/neovim.git $HOME/personal/neovim
+
+install_pacman "gettext cmake lua5.4"
+install_apt "gettext cmake lua5.4"
+
+cd $HOME/personal/neovim
+CMAKE_BUILD_TYPE=RelWithDebInfo make 
+sudo make install
