@@ -6,8 +6,6 @@ dry="0"
 while [[ $# > 0 ]]; do
   if [[ $1 == "--dry" ]]; then
     dry="1"
-  else
-    filter="$1"
   fi
   shift
 done
@@ -41,17 +39,17 @@ copy_dir() {
   popd > /dev/null
 }
 
-log "$script_dir -- $filter"
+copy_file() {
+  from=$1
+  to=$2
+  name=$(basename $from)
 
-cd $script_dir
-scripts=$(find ./runs -maxdepth 1 -mindepth 1 -executable -type f)
+  execute rm $to/$name
+  execute cp -r $from $to/$name
+}
 
-for script in $scripts; do
-	if echo "$script" | grep -qv "$filter"; then
-		log "filtering $script"
-		continue
-	fi
+log "--------------- dev-env ---------------"
 
-	execute ./$script
-done
+copy_dir .config $XDG_CONFIG_HOME
+copy_file .specialconfig $HOME
 
