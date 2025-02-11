@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+source ./utils.sh
+
+install_pacman golang
+install_apt golang
+
