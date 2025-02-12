@@ -5,6 +5,7 @@
 export PATH=$HOME/Android/Sdk/platform-tools:$PATH
 
 # asdf
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}:$PATH"
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 # Path to your Oh My Zsh installation.
@@ -120,4 +121,4 @@ eval "$(starship init zsh)"
 tmux new terminal
 
 # Load Angular CLI autocompletion.
-source <(ng completion script)
+# source <(ng completion script)

@@ -4,3 +4,13 @@ source ./utils.sh
 
 install_pacman fzf
 install_apt fzf
+
+curl -sS https://starship.rs/install.sh | sh
+
+install_pacman exa
+install_apt exa
+
+install_pacman bat
+install_apt bat
+
+

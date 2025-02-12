@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+git clone -b v0.16.0 https://github.com/asdf-vm/asdf.git $HOME/personal/asdf
+
+cd $HOME/personal/asdf
+make
+
+mkdir $HOME/.asdf
+cp asdf	$HOME/.asdf
+
+
