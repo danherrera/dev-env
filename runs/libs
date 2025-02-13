@@ -14,3 +14,9 @@ install_pacman bat
 install_apt bat
 
 
+install_pacman jq
+install_apt jq
+
+install_pacman parallel
+install_apt parallel
+

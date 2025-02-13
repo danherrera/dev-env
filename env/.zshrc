@@ -116,9 +116,11 @@ alias ls="exa"
 alias dl="cd ~/Downloads"
 alias dh="cd ~/dev/dh"
 
+source <(fzf --zsh)
+
 eval "$(starship init zsh)"
 
-tmux new terminal
+if [ "$TMUX" = "" ]; then tmux; fi
 
 # Load Angular CLI autocompletion.
 # source <(ng completion script)
