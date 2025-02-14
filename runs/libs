@@ -20,3 +20,6 @@ install_apt jq
 install_pacman parallel
 install_apt parallel
 
+install_pacman ripgrep
+install_apt ripgrep
+
