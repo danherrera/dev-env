@@ -5,3 +5,5 @@ source ./utils.sh
 install_pacman tmux
 install_apt tmux
 
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
