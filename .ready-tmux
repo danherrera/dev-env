@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+tmux rename-window dev-env
+tmux split-window -h
+tmux send-keys "cd .configclear"
+tmux select-pane -t 0
