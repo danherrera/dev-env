@@ -8,6 +8,9 @@ export PATH=$HOME/Android/Sdk/platform-tools:$PATH
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}:$PATH"
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
+# local scripts from dev-env
+export PATH="$HOME/.local/scripts:$PATH"
+
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
