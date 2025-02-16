@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-git clone -b v0.16.0 https://github.com/asdf-vm/asdf.git $HOME/personal/asdf
+git clone -b v0.16.0 https://github.com/asdf-vm/asdf.git $HOME/dev/dh/asdf
 
-cd $HOME/personal/asdf
+cd $HOME/dev/dh/asdf
 make
 
 mkdir $HOME/.asdf
