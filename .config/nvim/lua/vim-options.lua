@@ -8,5 +8,5 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<A-j>", ":cprev<CR>", { silent = true })
 vim.keymap.set("n", "<A-k>", ":cnext<CR>", { silent = true })
 
-vim.keymap.set("n", "<leader>p", '"_dP')
-vim.keymap.set("n", "<leader>y", '"+y')
+vim.keymap.set("v", "<leader>p", '"_dP')
+vim.keymap.set("v", "<leader>y", '"+y')
