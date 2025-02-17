@@ -1,0 +1,14 @@
+window-height=500
+window-width=1000
+
+font-size = 10
+theme = catppuccin-mocha
+
+adw-toolbar-style = flat
+gtk-wide-tabs = false
+
+window-theme = ghostty
+window-decoration = false
+
+custom-shader = shaders/gears-and-belts-custom.glsl
+
