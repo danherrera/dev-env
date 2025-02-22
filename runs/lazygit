@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+source ./utils.sh
+
+echo "Installing lazygit"
+
+install_apt lazygit
+install_pacman lazygit
+
