@@ -1,3 +1,20 @@
+# Set mod to Alt (use Mod4 for Super key)
+set $mod Mod4
+
+# Map Caps Lock to Escape
+exec_always --no-startup-id setxkbmap -option caps:escape
+
+exec --no-startup-id /usr/lib/gsd-xsettings
+
+font pango:MesloLGM Nerd Font 9
+
+# Restart config
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r restart
+
+# Logout
+bindsym $mod+Shift+o exec i3-msg exit
+
 # Set terminal
 set $term ghostty
 
@@ -74,6 +91,11 @@ workspace_auto_back_and_forth yes
 # Gaps
 gaps inner 5
 gaps outer 2
+
+# Volume control
+bindsym XF86AudioRaiseVolume exec amixer set 'Master' 5%+ unmute
+bindsym XF86AudioLowerVolume exec amixer set 'Master' 5%- unmute
+bindsym XF86AudioMute exec amixer set 'Master' toggle
 
 # shutdown / restart / suspend...
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (CTRL+s) shutdown
