@@ -11,6 +11,9 @@ export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 # local scripts from dev-env
 export PATH="$HOME/.local/scripts:$PATH"
 
+# golang
+export GOPATH="$HOME/go"
+
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
