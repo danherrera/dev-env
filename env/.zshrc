@@ -13,6 +13,9 @@ export PATH="$HOME/.local/scripts:$PATH"
 
 # golang
 export GOPATH="$HOME/go"
+export PATH="$HOME/go/bin:$PATH"
+export PATH="/usr/local/go/bin:$PATH"
+export PATH="$HOME/.asdf/installs/golang/1.24.1/packages/bin:$PATH"
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
