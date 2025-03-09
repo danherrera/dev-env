@@ -13,6 +13,7 @@ return {
 					"eslint",
 					"lua_ls",
 					"kotlin_language_server",
+					"gopls",
 				},
 			})
 		end,
