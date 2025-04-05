@@ -12,13 +12,16 @@ export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 export PATH="$HOME/.local/scripts:$PATH"
 
 # golang
-export GOPATH="$HOME/go"
 export PATH="$HOME/go/bin:$PATH"
 export PATH="/usr/local/go/bin:$PATH"
+export GOPATH="$HOME/.asdf/installs/golang/1.24.1/go"
 export PATH="$HOME/.asdf/installs/golang/1.24.1/packages/bin:$PATH"
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+
+# Flutter
+export PATH="$HOME/dev/dh/flutter/bin:$PATH"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
