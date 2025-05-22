@@ -1,11 +1,12 @@
 return {
 	"yetone/avante.nvim",
 	event = "VeryLazy",
+	lazy = false,
 	version = false, -- Never set this value to "*"! Never!
 	opts = {
 		provider = "gemini",
 		gemini = {
-			model = "gemini-2.5-pro-exp-03-25",
+			model = "gemini-2.5-flash-preview-04-17",
 		},
 	},
 	-- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
