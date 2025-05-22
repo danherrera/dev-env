@@ -132,7 +132,7 @@ source <(fzf --zsh)
 
 eval "$(starship init zsh)"
 
-if [ "$TMUX" = "" ]; then tmux; fi
+if [ "$TMUX" = "" ] && [ "$TERM_PROGRAM" != "vscode" ]; then tmux; fi
 
 # Load Angular CLI autocompletion.
 # source <(ng completion script)
