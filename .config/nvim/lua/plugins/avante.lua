@@ -8,6 +8,13 @@ return {
     gemini = {
       model = "gemini-2.5-flash-preview-05-20",
     },
+    system_prompt = function()
+      local hub = require("mcphub").get_hub_instance()
+      return hub:get_active_servers_prompt()
+    end,
+    custom_tools = function()
+      return { require("mcphub.extensions.avante").mcp_tool() }
+    end
   },
   -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
   build = "make",
