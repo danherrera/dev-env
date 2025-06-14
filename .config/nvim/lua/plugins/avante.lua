@@ -4,6 +4,7 @@ return {
 	lazy = false,
 	version = false, -- Never set this value to "*"! Never!
 	opts = {
+		provider = "gemini",
 		providers = {
 			gemini = {
 				model = "gemini-2.5-flash-preview-05-20",
