@@ -14,6 +14,7 @@ return {
 					"lua_ls",
 					"kotlin_language_server",
 					"gopls",
+					"ts_ls",
 				},
 			})
 		end,
