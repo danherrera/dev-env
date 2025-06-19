@@ -18,7 +18,7 @@ export GOPATH="$HOME/.asdf/installs/golang/1.24.1/go"
 export PATH="$HOME/.asdf/installs/golang/1.24.1/packages/bin:$PATH"
 
 # Rust
-export PATH="$HOME/cargo/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
