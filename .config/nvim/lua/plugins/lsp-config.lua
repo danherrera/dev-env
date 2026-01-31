@@ -24,25 +24,20 @@ return {
 		config = function()
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-			local lspconfig = require("lspconfig")
-			lspconfig.eslint.setup({
+			vim.lsp.config("*", {
 				capabilities = capabilities,
 			})
-			lspconfig.lua_ls.setup({
-				capabilities = capabilities,
-			})
-			lspconfig.rust_analyzer.setup({
-				capabilities = capabilities,
+
+			vim.lsp.config("eslint", {})
+			vim.lsp.config("lua_ls", {})
+			vim.lsp.config("rust_analyzer", {
 				settings = {
 					["rust-analyzer"] = {},
 				},
 			})
-			lspconfig.emmet_ls.setup({
-				capabilities = capabilities,
-			})
-			lspconfig.kotlin_language_server.setup({
-				capabilities = capabilities,
-			})
+			vim.lsp.config("emmet_ls", {})
+
+			vim.lsp.enable({ "eslint", "lua_ls", "rust_analyzer", "emmet_ls" })
 
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
 			vim.keymap.set("n", "gr", vim.lsp.buf.references, {})
